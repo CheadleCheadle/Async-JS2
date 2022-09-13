@@ -23,7 +23,12 @@ slowerGoodbye(); // prints 'bye' after 1750 ms
 ***********************************************************************/
 
 function postpone(cb, delay) {
-  // Your code here
+  const newFunction = () => setTimeout(cb, delay);
+
+  return newFunction;
+
+
+
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
